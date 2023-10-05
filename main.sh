@@ -11,7 +11,7 @@ while true; do
     if [[ $response == "y" || $response == "Y" || $response == "" ]]; then
         sudo reboot
     elif [[ $response == "n" || $response == "N" ]]; then
-        :
+        break
     else
         echo "Invalid option."
     fi
