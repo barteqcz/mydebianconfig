@@ -7,6 +7,8 @@ sudo apt install network-manager-gnome pipewire pipewire-alsa pipewire-jack pipe
 sudo apt purge zutty lightdm-gtk-greeter yelp malcontent -y
 sudo apt autoremove --purge -y
 sudo sed -i '/greeter-hide-users=false/s/^/#/g' /etc/lightdm/lightdm.conf
+sudo rm /etc/grub.d/05_debian_theme
+sudo update-grub
 while true; do
     read -rp "Done. Reboot? [Y/n] " response
     if [[ $response == "y" || $response == "Y" || $response == "" ]]; then
