@@ -36,6 +36,9 @@ tar -xf Bibata-Modern-Classic.tar.xz
 sudo mv Bibata-Modern-Classic /usr/share/icons/
 sudo echo "qt5ct=QT_QPA_PLATFORMTHEME" >> /etc/environment
 sudo echo "XCURSOR_SIZE=24" >> /etc/environment
+sudo systemctl mask hibernate.target
+sudo systemctl mask suspend.target
+sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 while true; do
     read -rp "Done. Reboot? [Y/n] " response
