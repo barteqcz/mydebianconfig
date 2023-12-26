@@ -17,14 +17,14 @@ sudo su -c 'echo "#swapfile" >> /etc/fstab'
 sudo su -c 'echo "/swapfile    none    swap    sw    0    0" >> /etc/fstab'
 wget http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_2.1.6.tar.xz
 wget http://packages.linuxmint.com/pool/main/m/mint-y-icons/mint-y-icons_1.7.1.tar.xz
-tar -xf mint-themes_2.1.5.tar.xz
+tar -xf mint-themes_2.1.6.tar.xz
 cd mint-themes/
 make clean
 make
 cd usr/share/themes/
 sudo mv * /usr/share/themes/
 cd
-tar -xf mint-y-icons_1.6.7.tar.xz
+tar -xf mint-y-icons_1.7.1.tar.xz
 cd mint-y-icons/usr/share/icons/
 sudo mv * /usr/share/icons/
 cd
